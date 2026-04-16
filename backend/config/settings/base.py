@@ -57,10 +57,10 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-CSRF_TRUSTED_ORIGINS = config(
-    'CSRF_TRUSTED_ORIGINS',
-    default='',
-).split(',')
+CSRF_TRUSTED_ORIGINS = os.getenv(
+    "CSRF_TRUSTED_ORIGINS",
+    "http://localhost:3000"
+).split(",")
 
 ROOT_URLCONF = 'config.urls'
 
@@ -130,10 +130,10 @@ SIMPLE_JWT = {
 }
 
 # ─── CORS ────────────────────────────────────────────────
-CORS_ALLOWED_ORIGINS = config(
-    'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:3000,',
-).split(',')
+CORS_ALLOWED_ORIGINS = os.getenv(
+    "CORS_ALLOWED_ORIGINS",
+    "http://localhost:3000"
+).split(",")
 CORS_ALLOW_CREDENTIALS = True
 
 # ─── Celery ──────────────────────────────────────────────
