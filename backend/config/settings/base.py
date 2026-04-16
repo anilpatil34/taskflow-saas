@@ -59,7 +59,7 @@ MIDDLEWARE = [
 
 CSRF_TRUSTED_ORIGINS = os.getenv(
     "CSRF_TRUSTED_ORIGINS",
-    "http://localhost:3000"
+    "https://taskflow-saas-six.vercel.app"
 ).split(",")
 
 ROOT_URLCONF = 'config.urls'
@@ -132,7 +132,7 @@ SIMPLE_JWT = {
 # ─── CORS ────────────────────────────────────────────────
 CORS_ALLOWED_ORIGINS = os.getenv(
     "CORS_ALLOWED_ORIGINS",
-    "http://localhost:3000"
+    "http://localhost:3000,https://taskflow-saas-six.vercel.app"
 ).split(",")
 CORS_ALLOW_CREDENTIALS = True
 
