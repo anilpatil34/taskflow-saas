@@ -9,6 +9,7 @@ click-plugins==1.1.1.2
 click-repl==0.3.0
 colorama==0.4.6
 cron_descriptor==2.0.8
+decouple==0.0.7
 dj-database-url==3.1.2
 Django==5.1.4
 django-celery-beat==2.7.0
@@ -46,3 +47,4 @@ typing_extensions==4.15.0
 tzdata==2026.1
 vine==5.1.0
 wcwidth==0.6.0
+whitenoise==6.12.0
