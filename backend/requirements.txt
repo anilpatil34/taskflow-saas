@@ -9,7 +9,6 @@ click-plugins==1.1.1.2
 click-repl==0.3.0
 colorama==0.4.6
 cron_descriptor==2.0.8
-decouple==0.0.7
 dj-database-url==3.1.2
 Django==5.1.4
 django-celery-beat==2.7.0
@@ -38,6 +37,7 @@ pytest==9.0.3
 pytest-django==4.9.0
 python-crontab==3.3.0
 python-dateutil==2.9.0.post0
+python-decouple==3.8
 python-dotenv==1.0.1
 redis==5.2.1
 six==1.17.0
