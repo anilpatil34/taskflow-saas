@@ -1,10 +1,12 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  'https://taskflow-saas-ik54.onrender.com/';
 
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: `${API_URL}/api`, 
   headers: {
     'Content-Type': 'application/json',
   },
