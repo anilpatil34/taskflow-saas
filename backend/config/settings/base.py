@@ -6,6 +6,7 @@ from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
 from corsheaders.defaults import default_headers
+from decouple import config
 
 load_dotenv()
 
@@ -83,7 +84,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # ─── Database ────────────────────────────────────────────
 import dj_database_url
-from decouple import config
 
 DATABASES = {
     'default': dj_database_url.config(
